@@ -15,9 +15,14 @@
 using namespace std;
 
 int main() {
+    int diaNacimiento;
     int mesNacimiento;
     int añoNacimiento;
     string nombre;
+
+    cout << "dia: ";
+    cin >> diaNacimiento;
+    cin.ignore();  // 🔴 MUY IMPORTANTE
 
     cout << "mes: ";
     cin >> mesNacimiento;
@@ -30,6 +35,6 @@ int main() {
     cout << "Nombre completo: ";
     getline(cin, nombre);
 
-    cout << nombre << " naciste en " << añoNacimiento << " en el mes de " << mesNacimiento << endl;
+    cout << nombre << " naciste en " << añoNacimiento << " en el mes de " << mesNacimiento << " el dia " << diaNacimiento << endl;
     return 0;
 }
